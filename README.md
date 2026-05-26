@@ -1,6 +1,6 @@
 # ai-hist
 
-Forensic timeline tool for local AI artifact analysis. Parses conversation history stored on disk by Claude Code and Cursor IDE, then produces a chronological event log with full timestamps.
+Forensic timeline tool for local AI artifact analysis. Parses conversation history and produces a timeline for files stored on disk by Claude Code and Cursor IDE.
 
 ```
 2026-05-25 01:15:16  claude_code   tool_use     [a1b2c3d4]  [tool: Bash] cd /Users/alice/Projects/MyApp && xcodegen generate
@@ -126,7 +126,7 @@ Additional OS support: add support for Linux and Windows.
 
 ## Known gaps
 
-Claude Desktop stores data under `~/Library/Application Support/Claude/` but the conversation format hasn't been reversed yet, so it's excluded entirely.
+Claude Desktop stores data under `~/Library/Application Support/Claude/` but the conversation format hasn't been reversed yet and is excluded.
 
-`history.jsonl` is deduplicated against session files. If a session's `.jsonl` exists, its prompts come from there and the history entry is skipped so nothing appears twice.
+`history.jsonl` is deduplicated against session files. If a session's `.jsonl` exists, its prompts come from there and the history entry is skipped.
 
