@@ -9,7 +9,7 @@ Forensic timeline tool for local AI artifact analysis. Parses conversation histo
 2026-05-25 01:20:48  claude_code   tool_result  [a1b2c3d4]  ** BUILD SUCCEEDED **
 ```
 
-Storage locations were mapped with reference to the research notes in [ghosttype](https://github.com/xFreed0m/ghosttype). The parsing logic and output formats are written independently.
+This was inspired by the research and project here: [https://github.com/xFreed0m/ghosttype](https://github.com/xFreed0m/ghosttype). But targetting forensic timelining rather then capturing stored credentials.
 
 Note: This was tested on macOS. The tool should run on Linux but all storage paths are macOS specific. Using the `--root` should help identify where the  proper files exist. 
 
