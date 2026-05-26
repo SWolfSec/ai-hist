@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-hist"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+chatgpt-decrypt = ["cryptography>=42"]
+
+[project.scripts]
+ai-hist = "ai_hist.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ai_hist*"]
